@@ -11,7 +11,7 @@
     "build": "npx tsc",
     "lint": "tslint -c tslint.json src/**/*.ts",
     "prepublish": "npm run build",
-    "co:login": "aws codeartifact login --tool npm --repository gaapjan-packages --domain gaapjan --domain-owner 440900076177 --profile default"
+    "co:login": "aws codeartifact login --tool npm --repository gaapjan-packages --domain gaapjan --domain-owner your-aws-account --profile default"
   },
   "keywords": [],
   "author": "",

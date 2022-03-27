@@ -1,5 +1,4 @@
 # cdk-npm-package-to-codeartifact
-# cdk-npm-package-to-codeartifact
 
 1. Create the CodeArtifact domain
 ```
@@ -13,7 +12,7 @@ aws codeartifact create-repository --domain gaapjan --repository gaapjan-package
 ```
 3. NPM login
 ```
-aws codeartifact login --tool npm --repository gaapjan-packages --domain gaapjan --domain-owner 440900076177 --profile default
+aws codeartifact login --tool npm --repository gaapjan-packages --domain gaapjan --domain-owner your-aws-account --profile default
 ```
 4. `npm init`
 5. 
