@@ -1,5 +1,5 @@
 # cdk-npm-package-to-codeartifact
-## This is an example please DO change the domain and aws-account to your needs
+### In my code i am using a random domain `gaapjan`. Please change the domain and aws-account to your own needs
 ### 1. Create the CodeArtifact domain
 ```
 aws codeartifact create-domain --domain gaapjan --profile default
