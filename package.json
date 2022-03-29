@@ -1,6 +1,6 @@
 {
-  "name": "gaapjan-npm-package-demo",
-  "version": "0.0.7",
+  "name": "@gaapjan/gaapjan-npm-package-demo",
+  "version": "0.0.1",
   "description": "a npm package",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -15,9 +15,10 @@
   },
   "scripts": {
     "co:login": "aws codeartifact login --tool npm --repository gaapjan-packages --domain gaapjan --domain-owner your-aws-account --profile default",
+    "npm:login":"./npm-config-set.sh default",
     "test": "jest --config jestconfig.json",
     "prepare": "tsc",
-    "prepublish": "npm run co:login",
+    "prepublish": "npm run npm:login",
     "build:Dev": "rm -rf dist/js && npm run build",
     "lint": "eslint \"src/**/*.{js,jsx}\"",
     "dev": "rollup -c -w",

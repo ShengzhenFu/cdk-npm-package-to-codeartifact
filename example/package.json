@@ -11,13 +11,14 @@
     "build": "npx tsc",
     "lint": "tslint -c tslint.json src/**/*.ts",
     "prepublish": "npm run build",
+    "npm:login": "./npm-config-set.sh default",
     "co:login": "aws codeartifact login --tool npm --repository gaapjan-packages --domain gaapjan --domain-owner your-aws-account --profile default"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "gaapjan-npm-package-demo": "0.0.7",
+    "@gaapjan/gaapjan-npm-package-demo": "0.0.1",
     "tslint": "^6.1.3",
     "typescript": "^4.6.3"
   },
