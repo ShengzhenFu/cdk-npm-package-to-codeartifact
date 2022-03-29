@@ -14,7 +14,7 @@
     "lib": "dist"
   },
   "scripts": {
-    "co:login": "aws codeartifact login --tool npm --repository gaapjan-packages --domain gaapjan --domain-owner your-aws-account --profile default",
+    "co:login": "aws codeartifact login --tool npm --repository gaapjan-packages --domain gaapjan --domain-owner your-aws-account --namespace @gaapjan --profile default",
     "npm:login":"./npm-config-set.sh default",
     "test": "jest --config jestconfig.json",
     "prepare": "tsc",
