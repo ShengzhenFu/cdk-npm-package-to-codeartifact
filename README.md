@@ -65,4 +65,7 @@ npm config set registry https://registry.npmjs.org/
 ```
 
 ### 9. remove everything
+
 TO-DO
+### 10. AWS Codepipeline
+
