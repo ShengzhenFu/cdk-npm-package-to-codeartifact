@@ -15,7 +15,7 @@
   },
   "scripts": {
     "co:login": "aws codeartifact login --tool npm --repository gaapjan-packages --domain gaapjan --domain-owner your-aws-account --namespace @gaapjan --profile default",
-    "npm:login":"./npm-config-set.sh default",
+    "npm:login": "./npm-config-set.sh default",
     "test": "jest --config jestconfig.json",
     "prepare": "tsc",
     "prepublish": "npm run npm:login",
@@ -47,11 +47,14 @@
     "eslint": "^8.12.0",
     "jest": "^27.5.1",
     "prettier": "^2.6.1",
+    "projen": "^0.54.7",
     "rollup": "^2.70.1",
     "ts-jest": "^27.1.4",
     "ts-node": "^10.7.0",
     "tslib": "^2.3.1",
     "typescript": "^4.6.3"
   },
-  "dependencies": {}
+  "dependencies": {
+    "aws-cdk": "^2.18.0"
+  }
 }
